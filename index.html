@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local404</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	  
+	<!-- THIS PAGE -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/flow_status.css">
+    <script src="js/js.js"></script>	
+	  
+	<!-- TOAST -->
+    <script src="js/jquery.toast.js"></script>	
+    <link rel="stylesheet" href="css/jquery.toast.css">
+	  
+	<!-- <script src="js/pop_out_nav_menu.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/pop_out_nav_menu.css"> -->
+	 
+  </head>
+
+  <body>
+    <div id='page_banner'>
+            <!-- <span onclick="openPopOutNavMenu()"> -->
+			<span>
+                <img id="page_logo" src="img/local404.jpeg" alt="My image"/>
+                <span class='page_title' id='page_title_nfdw'>Local</span> <span class='page_title' id='page_title_hub'>404</span>
+            </span>
+    </div>
+    <div id='page_content_container'>
+    
+      <h3 id="changeTheLightsHeader" class='page_header'>Change the Lights!</h3>
+  
+      <div id='page_content_wrapper'>
+      
+        <div class='light_choice_button' onclick="local404()">
+          Local404
+        </div>
+	      
+	<div class='light_choice_button' onclick="randomMessage()">
+          Random Message
+        </div>
+      
+        <div class='light_choice_button' onclick="randomPattern()">
+          Random Pattern
+        </div>
+      
+        <div class='custom_text_light_choice_button'>
+          Custom Text (max 32 chars)<br>
+	  	  <input id='customTextBox' type='text' maxlength="32">
+		  <div id='submitButton' onclick="sendCustomText()">Submit!</div>
+        </div>
+	      
+      </div>
+    </div>
+
+  </body>
+
+</html>
